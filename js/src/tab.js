@@ -83,7 +83,7 @@ class Tab extends BaseComponent {
       previous = previous[previous.length - 1]
     }
 
-    let hideEvent = null
+    let hideEvent
 
     if (previous) {
       hideEvent = EventHandler.trigger(previous, EVENT_HIDE, {
@@ -95,7 +95,7 @@ class Tab extends BaseComponent {
       relatedTarget: previous
     })
 
-    if (showEvent.defaultPrevented || (hideEvent !== null && hideEvent.defaultPrevented)) {
+    if (showEvent.defaultPrevented || (hideEvent && hideEvent.defaultPrevented)) {
       return
     }
 
