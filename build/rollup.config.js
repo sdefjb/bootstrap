@@ -13,7 +13,7 @@ let fileDest = `bootstrap${ESM ? '.esm' : ''}`
 const external = ['@popperjs/core']
 const plugins = [
   babel({
-  // Only transpile our source code
+    // Only transpile our source code
     exclude: 'node_modules/**',
     // Include the helpers in the bundle, at most one copy of each
     babelHelpers: 'bundled'
