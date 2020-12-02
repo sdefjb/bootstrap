@@ -94,7 +94,6 @@ body {
     /* rtl:end:ignore */
     z-index: 1030;
     grid-column: 1 / span 3;
-    /* min-height: 6rem; */
   }
 
   .bd-aside,
